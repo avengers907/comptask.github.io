@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ms office
+</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin-bottom: 10px;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> ms office </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="MS_Office.html"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form name="myform">
+            <div class="question">
+                <p>(1) કયા મેનૂમાંથી તમે હેડર અને ફૂટર દાખલ કરી શકો છો</p>
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Insert Menu</label><br>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">View Menu</label><br>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Format menu</label><br>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Tools Menu</label><br>
+            </div>
+            <div class="question">
+                <p>(2) To get to the ‘Symbol’ dialog box, click on the
+_________menu and choose ‘Symbol’.</p>
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Insert</label><br>
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Format</label><br>
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Tools</label><br>
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Tables</label><br>
+            </div>
+            <div class="question">
+                <p>(3)  ____________option from clipboard is used to move
+data from one place to another in a document.</p>
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Copy & Paste</label><br>
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Cute and paste</label><br>
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Bold</label><br>
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Justify </label><br>
+            </div>
+            <div class="question">
+                <p>(4) __________ is an option in Font Group.</p>
+                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Strikethrough</label><br>
+                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b"></label>find<br>
+                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c"></label>Replace<br>
+                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d"></label>Change styles<br>
+            </div>
+            <div class="question">
+                <p>(5) Shortcut for document views toolbar is situated in
+_____________bar.</p>
+                <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Task bar</label><br>
+                <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">status Bar</label><br>
+                <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Tool bar</label><br>
+                <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Title Bar</label><br>
+            </div> 
+            <div class="question">
+                <p>(6) Bullets and Numbering is in____________tab.</p>
+                <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Home tab</label><br>
+                <input type="radio" name="q6" value="b" id="q6b"><label for="q6b"></label>Insert tab<br>
+                <input type="radio" name="q6" value="c" id="q6c"><label for="q6c"></label>Pagelayout tab<br>
+                <input type="radio" name="q6" value="d" id="q6d"><label for="q6d"></label>View tab
+<br>
+            </div>
+            <!-- Add more questions as needed -->
+            <input type="button" value="submit" class="submit-btn" onclick="check()">
+        </form>
+    </div>
+<script>
+     function check(){
+          var q1=document.myform.q1.value;
+          var q2=document.myform.q2.value;
+          var q3=document.myform.q3.value;
+          var q4=document.myform.q4.value;
+          var q5=document.myform.q5.value;
+          var q6=document.myform.q6.value;
+          var count=0;
+          if(q1=="a") {
+              count++;
+          }
+          if(q2=="a") {
+              count++;
+          }
+          if(q3=="b") {
+              count++;
+          }
+          if(q4=="a") {
+              count++;
+          }
+          if(q5=="b") {
+              count++;
+          }
+          if(q6=="a") {
+              count++;
+          }
+          alert("Your Total marks is "+count+" ");
+       }
+
+</script>
+</body>
+</html>
